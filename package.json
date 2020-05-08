@@ -1,0 +1,15 @@
+{
+  "name": "@yanan.g/publish-npm-test",
+  "version": "1.0.1",
+  "description": "test publish first npm module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YClound/public-npm-test"
+  },
+  "author": "yanan.g",
+  "license": "ISC"
+}
