@@ -69,13 +69,8 @@ export default tseslint.config([
 ```
 
 # 包版本发布到npm上
-## 确保代码提交到仓库
-git add .
-git commit -m "Release v0.1.0"
-git push origin main
-
-## 构建组件库
-pnpm build
+## 本地打包
+npm run build
 
 ## 登录npm
 npm login

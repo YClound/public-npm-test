@@ -4,7 +4,7 @@
 
 ```tsx
 import React, { useState } from "react";
-import { Toast, Button } from "react-components-library";
+import { Toast, Button } from "@yanan.g/publish-npm-test";
 
 export default () => {
   const [open, setOpen] = useState(false);

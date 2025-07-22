@@ -31,7 +31,7 @@ export default defineConfig({
     // 库模式打包配置
     lib: {
       entry: path.resolve(__dirname, "src/index.ts"), // 入口文件
-      name: "MyReactComponents", // 全局变量名
+      name: "@yanan.g/publish-npm-test", // 全局变量名
       formats: ["es", "umd", "cjs"], // 输出格式
       fileName: (format) => {
         // 不同格式的输出文件名

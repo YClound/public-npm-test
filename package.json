@@ -1,6 +1,6 @@
 {
-  "name": "react-components-library",
-  "version": "1.0.0",
+  "name": "@yanan.g/publish-npm-test",
+  "version": "2.0.0",
   "description": "A custom React component library",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",

@@ -3,7 +3,7 @@
 ## 基础用法
 
 ```tsx
-import { Button } from 'react-components-library';
+import { Button } from '@yanan.g/publish-npm-test';
 
 export default () => (
   <div>
