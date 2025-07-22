@@ -9,18 +9,8 @@ export default defineConfig({
     react(),
     // 生成TypeScript类型声明文件
     dts({
-      include: ["src/components/", "src/index.ts", "src/styles/", "src/providers"],
-      exclude: ["src/**/*.test.tsx", "src/**/*.stories.tsx"],
+      include: ["src/components/", "src/providers", "src/types", "src/index.ts"],
       outDir: "dist/types",
-      // 关键配置：转换CSS导入为类型声明可识别的格式
-      beforeWriteFile: (filePath, content) => {
-        // 移除CSS导入语句
-        const processedContent = content.replace(
-          /import\s+['"].*?\.css['"];/g,
-          ""
-        );
-        return { filePath, content: processedContent };
-      },
       // 指定类型声明文件，确保CSS模块类型被识别
       tsconfigPath: "./tsconfig.app.json",
     }),
