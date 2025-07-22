@@ -9,7 +9,7 @@ export default defineConfig({
     react(),
     // 生成TypeScript类型声明文件
     dts({
-      include: ["src/components/", "src/styles/"],
+      include: ["src/components/", "src/index.ts", "src/styles/", "src/providers"],
       exclude: ["src/**/*.test.tsx", "src/**/*.stories.tsx"],
       outDir: "dist/types",
       // 关键配置：转换CSS导入为类型声明可识别的格式
@@ -31,7 +31,7 @@ export default defineConfig({
     // 库模式打包配置
     lib: {
       entry: path.resolve(__dirname, "src/index.ts"), // 入口文件
-      name: "@yanan.g/publish-npm-test", // 全局变量名
+      name: "publishNpmTest", // 全局变量名
       formats: ["es", "umd", "cjs"], // 输出格式
       fileName: (format) => {
         // 不同格式的输出文件名
