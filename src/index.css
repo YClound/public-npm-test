@@ -1,0 +1,19 @@
+/* 定义基础CSS变量默认值，确保组件在ThemeProvider加载前有默认样式 */
+:root {
+  --primary-color: #165DFF;
+  --secondary-color: #7B61FF;
+  --success-color: #00B42A;
+  --warning-color: #FF7D00;
+  --danger-color: #F53F3F;
+  --dark-color: #1D2129;
+  --light-color: #FFFFFF;
+  --border-radius: 4px;
+  --box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* 基础样式重置 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
